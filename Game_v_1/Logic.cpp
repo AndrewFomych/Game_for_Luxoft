@@ -60,13 +60,15 @@ using namespace std;
 		dontGo();
 	}
 
+
 	void Logic::dontGo() {
-		if (x >= width - 2)
+		if (x >= WIDTH - 2)
 			x = 18;
 
 		if (x < 0)
 			x = 0;
 	}
+
 
 	void Logic::gameOver1(int _randomNumber1, int _randomNumber2) {
 		for (int i = 0; i < 20; i++) {
@@ -75,12 +77,14 @@ using namespace std;
 		}
 	}
 
+
 	void Logic::gameOver2(int _randomNumber1, int _randomNumber2) {
 		for (int i = 0; i < 20; i++) {
 			if (coordinateOfBarier2X[i] == x - _randomNumber1 && coordinateOfBarier2Y[i] == (y + 1) + _randomNumber2)
 				gameOver = true;
 		}
 	}
+
 
 	void Logic::randomCars(int _coordinateOfBarierX[], int _coordinateOfBarierY[],
 		int _carX, int _carY, int _lengthOfBarier) {
@@ -100,6 +104,7 @@ using namespace std;
 		}
 	}
 
+
 	void Logic::timer() {
 		sec = clock() / (800 + wait);
 
@@ -113,12 +118,14 @@ using namespace std;
 		}
 	}
 
+
 	void Logic::distanceCar() {
 		if (min != 0)
 			dist = speed * ((min * 60) + sec);
 		else
 			dist = speed * sec;
 	}
+
 
 	double Logic::getDist() {
 		return dist;

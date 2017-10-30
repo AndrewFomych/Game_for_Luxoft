@@ -2,8 +2,8 @@
 #include <iostream>
 
 	extern bool gameOver;
-	extern const int width;
-	extern const int heigtht;
+	extern const int WIDTH;
+	extern const int HEIGTHT;
 	enum moveCar { STOP = 0, LEFT, RIGHT, UP, DOWN };
 	extern moveCar dir;
 	extern int x, y, carY, carX, car2X, car2Y;

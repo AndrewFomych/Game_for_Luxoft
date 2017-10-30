@@ -7,15 +7,15 @@ using namespace std;
 
 	void Draw::map(double _dist, int _min, int _sec, int _speed) {
 		system("cls");
-		for (int i = 0; i < width + 2; i++)
+		for (int i = 0; i < WIDTH + 2; i++)
 			cout << "#";
 		cout << endl;
 
-		for (int i = 0; i < heigtht; i++) {
-			for (int j = 0; j < width; j++) {
-				if (j == 0 || j == width - 1)
+		for (int i = 0; i < HEIGTHT; i++) {
+			for (int j = 0; j < WIDTH; j++) {
+				if (j == 0 || j == WIDTH - 1)
 					cout << "#";
-				if (j == width / 2)
+				if (j == WIDTH / 2)
 					cout << "|";
 				if (i == y && j == x)
 					cout << "0";
@@ -51,7 +51,7 @@ using namespace std;
 			cout << endl;
 		}
 
-		for (int i = 0; i < width + 2; i++)
+		for (int i = 0; i < WIDTH + 2; i++)
 			cout << "#";
 		cout << endl;
 

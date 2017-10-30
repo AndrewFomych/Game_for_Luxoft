@@ -3,8 +3,8 @@
 #include "Global.h"
 
 bool gameOver;
-const int width = 20;
-const int heigtht = 20;
+const int WIDTH = 20;
+const int HEIGTHT = 20;
 moveCar dir;
 int x, y, carY, carX, car2X, car2Y;
 int coordinateOfBarierX[20], coordinateOfBarierY[20],
