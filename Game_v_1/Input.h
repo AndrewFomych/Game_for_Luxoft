@@ -1,4 +1,6 @@
 #pragma once
+extern enum moveCar { STOP = 0, LEFT, RIGHT, UP, DOWN };
+extern moveCar dir;
 class Input {
 public:
 	void move();

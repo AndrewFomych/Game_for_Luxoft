@@ -1,3 +1,12 @@
 ﻿  Game_v_1.cpp
+g:\praktika\c++\game\game_v_1\game_for_luxoft\game_v_1\draw.h(2): warning C4091: extern : пропускается слева от "Const", когда ни одна переменная не объявлена
+g:\praktika\c++\game\game_v_1\game_for_luxoft\game_v_1\input.h(2): warning C4091: extern : пропускается слева от "moveCar", когда ни одна переменная не объявлена
+  Создание кода...
+  Компиляция...
+  Input.cpp
+g:\praktika\c++\game\game_v_1\game_for_luxoft\game_v_1\input.h(2): warning C4091: extern : пропускается слева от "moveCar", когда ни одна переменная не объявлена
+  Создание кода...
+  Пропуск... (изменения не обнаружены)
+  Logic.cpp
   Game_v_1.vcxproj -> G:\Praktika\C++\Game\Game_v_1\Game_for_Luxoft\x64\Debug\Game_v_1.exe
   Game_v_1.vcxproj -> G:\Praktika\C++\Game\Game_v_1\Game_for_Luxoft\x64\Debug\Game_v_1.pdb (Partial PDB)

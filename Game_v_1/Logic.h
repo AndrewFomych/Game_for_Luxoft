@@ -14,8 +14,11 @@ public:
 	int getSec();
 	int getSpeed();
 	void setSpeed(int _speed);
+	void setGameOver(bool _gameOver);
+	bool getGameOver();
 
 private:
+	bool gameOver;
 	int speed;
 	int coordX, coordY;
 	int coord2X, coord2Y;

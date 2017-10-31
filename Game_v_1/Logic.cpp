@@ -4,9 +4,10 @@
 #include <ctime>
 #include "Global.h"
 #include "Logic.h"
+#include "Draw.h"
+#include "Input.h"
 using namespace std;
-
-
+moveCar dir;
 
 	void Logic::move() {
 		switch (dir)
@@ -63,7 +64,7 @@ using namespace std;
 
 	void Logic::dontGo() {
 		if (x >= WIDTH - 2)
-			x = 18;
+			x = WIDTH - 2;
 
 		if (x < 0)
 			x = 0;
@@ -145,4 +146,12 @@ using namespace std;
 
 	void Logic::setSpeed(int _speed) {
 		speed = _speed;
+	}
+
+	void Logic::setGameOver(bool _gameOver) {
+		gameOver = _gameOver;
+	}
+
+	bool Logic::getGameOver() {
+		return gameOver;
 	}

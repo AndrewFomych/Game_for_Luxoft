@@ -5,9 +5,9 @@
 #include "Input.h"
 #include "Logic.h"
 using namespace std;
+extern moveCar dir;
 
 void setup() {
-	gameOver = false;
 	dir = STOP;
 	x = 14;
 	y = 10;
@@ -25,7 +25,8 @@ int main()
 	Input input;
 	Logic logic;
 	logic.setSpeed(10);
-	while (!gameOver) {
+	logic.setGameOver(false);
+	while (!logic.getGameOver()) {
 		draw.map(logic.getDist(), logic.getMin(), logic.getSec(), logic.getSpeed());
 		logic.gameOver1(randomNamber11, 0);
 		logic.gameOver1(randomNamber1, randomNamber2);

@@ -2,10 +2,6 @@
 #include <iostream>
 #include "Global.h"
 
-bool gameOver;
-const int WIDTH = 20;
-const int HEIGTHT = 20;
-moveCar dir;
 int x, y, carY, carX, car2X, car2Y;
 int coordinateOfBarierX[20], coordinateOfBarierY[20],
 coordinateOfBarier2X[20], coordinateOfBarier2Y[20];

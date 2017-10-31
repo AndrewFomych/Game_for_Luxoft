@@ -1,11 +1,6 @@
 #pragma once
 #include <iostream>
 
-	extern bool gameOver;
-	extern const int WIDTH;
-	extern const int HEIGTHT;
-	enum moveCar { STOP = 0, LEFT, RIGHT, UP, DOWN };
-	extern moveCar dir;
 	extern int x, y, carY, carX, car2X, car2Y;
 	extern int coordinateOfBarierX[20], coordinateOfBarierY[20],
 		coordinateOfBarier2X[20], coordinateOfBarier2Y[20];
