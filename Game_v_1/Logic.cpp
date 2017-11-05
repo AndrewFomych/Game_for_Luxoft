@@ -6,8 +6,10 @@
 #include "Logic.h"
 #include "Draw.h"
 #include "Input.h"
+#include "Singleton.h"
 using namespace std;
 moveCar dir;
+//Singleton* consts = Singleton::Instance();
 
 	void Logic::move() {
 		switch (dir)

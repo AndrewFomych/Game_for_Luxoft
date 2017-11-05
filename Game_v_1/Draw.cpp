@@ -2,8 +2,9 @@
 #include <iostream>
 #include "Draw.h"
 #include "Global.h"
+#include "Singleton.h"
 using namespace std;
-
+//Singleton* consts = Singleton::Instance();
 
 	void Draw::map(double _dist, int _min, int _sec, int _speed) {
 		system("cls");
